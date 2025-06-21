@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 # Parameters
-frames = 60
+frames = 90
 x = np.linspace(-10, 10, 1000)
 k = 2 * np.pi / 2       # Wave number (spatial frequency)
 w = 2 * np.pi / 2       # Angular frequency (temporal frequency)
@@ -34,7 +34,7 @@ def init():
 
 # Animation function
 def animate(i):
-    t = i * 0.2  # Time step
+    t = (i-45) * 0.2  # Time step
     # Two opposing wave packets with Gaussian envelopes
     wave1 = np.sin(k * (x - v * t)) * np.exp(-alpha * (x - v * t)**2)
     wave2 = -np.sin(k * (x + v * t)) * np.exp(-alpha * (x + v * t)**2)  # Phase-inverted (destructive)
