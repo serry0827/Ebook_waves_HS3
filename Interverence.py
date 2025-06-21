@@ -15,7 +15,8 @@ fig, ax = plt.subplots(figsize=(9, 3))
 plt.tight_layout()
 ax.set_xlim(-10, 10)
 ax.set_ylim(-2, 2)
-ax.set_title("Destructive Interference of Opposing Wave Packets")
+fig.suptitle("Destructive Interference of Opposing Wave Packets", fontsize = 14)
+fig.subplots_adjust(top = 0.9)
 ax.set_yticks([])
 
 # Initialize wave lines
