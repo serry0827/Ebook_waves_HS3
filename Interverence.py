@@ -34,7 +34,7 @@ def init():
 
 # Animation function
 def animate(i):
-    t = (i-45) * 0.2  # Time step
+    t = (i-45) * 0.1  # Time step
     # Two opposing wave packets with Gaussian envelopes
     wave1 = np.sin(k * (x - v * t)) * np.exp(-alpha * (x - v * t)**2)
     wave2 = -np.sin(k * (x + v * t)) * np.exp(-alpha * (x + v * t)**2)  # Phase-inverted (destructive)
