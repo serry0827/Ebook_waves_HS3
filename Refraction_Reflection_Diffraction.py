@@ -34,7 +34,7 @@ y_reflect_out = 1.5 + (x_reflect_out - 2)
 x_refract_in = np.linspace(3.5, 5, n_points)
 y_refract_in = 1.5 + (5 - x_refract_in)
 x_refract_out = np.linspace(5, 6, n_points)
-y_refract_out = 1.5 - 2 * (x_refract_out - 5)
+y_refract_out = 1.5 - 6 * (x_refract_out - 5)
 
 # Diffraction
 x_diff_in = np.linspace(6.5, 8, n_points)
