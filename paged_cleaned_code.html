@@ -968,16 +968,18 @@
          <tr>
             <td colspan="1" rowspan="1">
                <p>
+                  <u>
                   <span>
                      Advantages
                   </span>
+                  </u>
                </p>
             </td>
             <td colspan="1" rowspan="1">
-               <p>
+               <p><u>
                   <span>
                      Limitations
-                  </span>
+                  </span></u>
                </p>
             </td>
          </tr>
@@ -1072,16 +1074,16 @@
          <tr>
             <td colspan="1" rowspan="1">
                <p>
-                  <span>
+                  <span><u>
                      Advantages
-                  </span>
+                  </span></u>
                </p>
             </td>
             <td colspan="1" rowspan="1">
                <p>
-                  <span>
+                  <span><u>
                      Limitations
-                  </span>
+                  </span></u>
                </p>
             </td>
          </tr>
@@ -1165,16 +1167,16 @@
          <tr>
             <td colspan="1" rowspan="1">
                <p>
-                  <span>
+                  <span><u>
                      Advantages
-                  </span>
+                  </span></u>
                </p>
             </td>
             <td colspan="1" rowspan="1">
                <p>
-                  <span>
+                  <span><u>
                      Limitations
-                  </span>
+                  </span></u>
                </p>
             </td>
          </tr>
@@ -1267,16 +1269,16 @@
          <tr>
             <td colspan="1" rowspan="1">
                <p>
-                  <span>
+                  <span><u>
                      Advantages
-                  </span>
+                  </span></u>
                </p>
             </td>
             <td colspan="1" rowspan="1">
                <p>
-                  <span>
+                  <span><u>
                      Limitations
-                  </span>
+                  </span></u>
                </p>
             </td>
          </tr>
@@ -1569,24 +1571,46 @@
                Hear the sample resulting sounds:
             </span>
          </p>
-         <table>
+
+         <table style="width: 100%; table-layout: fixed;">
             <tr>
-               <td colspan="1" rowspan="1">
-                  <p>
-                     <span>
-                        No movement:
-                     </span>
-                  </p>
+               <td style="width: 50%; text-align: center;">
+                  <span>No movement:</span>
+                  <button onclick="document.getElementById('audio-no').play()">Play</button>
+                  <audio id="audio-no">
+                     <source src="audio/no_movement.mp3" type="audio/mpeg" />
+                     Your browser does not support the audio element.
+                  </audio>
                </td>
-               <td colspan="1" rowspan="1">
-                  <p>
-                     <span>
-                        Movement:
-                     </span>
-                  </p>
+               <td style="width: 50%; text-align: center;">
+                  <span>Movement:</span>
+                  <button onclick="document.getElementById('audio-yes').play()">Play</button>
+                  <audio id="audio-yes">
+                     <source src="audio/movement.mp3" type="audio/mpeg" />
+                     Your browser does not support the audio element.
+                  </audio>
                </td>
             </tr>
          </table>
+
+         <!--<table>
+         <tr>
+            <td colspan="1" rowspan="1">
+               <p>
+                  <span>
+                     No movement:
+                  </span>
+               </p>
+            </td>
+            <td colspan="1" rowspan="1">
+               <p>
+                  <span>
+                     Movement:
+                  </span>
+               </p>
+            </td>
+         </tr>
+      </table> -->
          <p>
             <span>
             </span>
