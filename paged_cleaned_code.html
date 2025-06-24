@@ -23,6 +23,30 @@
          page-break-after: always;
       }
 
+      .toc-part {
+         font-weight: bold;
+         margin-left: 0;
+      }
+
+      .toc-heading {
+         margin-left: 30px;
+      }
+
+      .toc-sub {
+         margin-left: 60px;
+      }
+
+      .title-page {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+      }
+
+      .title-content {
+         width: 100%;
+      }
+
       @media print {
          .page {
             box-shadow: none;
@@ -33,18 +57,19 @@
 </head>
 
 <body>
-   <div class="page">
-      <p id="h.yq344wffdh0s">
-         <span>
-            Seeing Sound: A Fundamental Guide to Wave Experimentation
-         </span>
-      </p>
-      <p id="h.g8o90hdatcyl">
-         <span>
-            SeungYun Lee
-         </span>
-         <hr />
-      </p>
+   <div class="page title-page">
+      <div class="title-content">
+         <p id="h.yq344wffdh0s" style = "font-size: 24pt; font weight: bold">
+            <span>
+               Seeing Sound: A Fundamental Guide to Wave Experimentation
+            </span>
+         </p>
+         <p id="h.g8o90hdatcyl">
+            <span>
+               SeungYun Lee
+            </span>
+         </p>
+      </div>
    </div>
 
    <div class="page">
@@ -87,7 +112,6 @@
       <p>
          <span></span>
       </p>
-      <hr />
       <p>
          <span></span>
       </p>
@@ -99,241 +123,171 @@
             Table of contents
          </span>
       </h1>
-      <p>
+      <p class="toc-part">
          <span>
             <a href="#h.j31fb2aldmdx">
                Part 1) Sound Theory
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-heading">
          <span>
             <a href="#h.rnlq8l6gagqz">
                I. Vibrations and the Types of Waves
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.bl0aptbip1mw">
                1.1 Waves and Types
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-heading">
          <span>
             <a href="#h.8czrqzi7u0dj">
                II. The Properties of Waves
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.nzmaluep2ifu">
                2.1 Fundamental Wave Properties
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.m6vouwms2lij">
                2.2 Energy Transfer in Waves
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.ts6u105ceqkg">
                2.3 Superposition and Interference
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.pgm2aehm60ao">
                2.4 Reflection, Refraction, and Diffraction
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-heading">
          <span>
             <a href="#h.1hxtn8ykf7a6">
                III. The Wave Equation
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.3nudlzn9pcv">
                3.1 Derivation of the Wave Equation
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-heading">
          <span>
             <a href="#h.hmyxbus9lxvl">
                IV. Sound Effects and Uses
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.7mjhntct4c6d">
                4.1 Doppler Effect and Practical Applications
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.b2pnajem04pk">
                4.2 Acoustic Resonance and Harmonics
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.ne44y9ho6ks2">
                4.3 Sound Propagation in Different Media
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-part">
          <span>
             <a href="#h.b49sjncw9rsc">
                Part 2) Experimental Methods
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-heading">
          <span>
             <a href="#h.wiky8a4p59n4">
                V. Programs and How To Use Them
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.pkbm6ncy5muw">
                1. Audacity : Best for beginners and quick FFT analysis
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.3t93l42ogt2v">
                2. Sonic Visualiser: Best for spectrograms and frequency-over-time analysis
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.sfl1022xnt4z">
                3. Adobe Audition: Best for high-resolution, professional analysis
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.qdz7l11iftxa">
                4. Python (with NumPy, SciPy, and Matplotlib): Best for customizable, code-based analysis
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-heading">
          <span>
             <a href="#h.lx4i5zmygwkl">
                VI. Sample Experiment
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.m3xx0uuw2yd9">
                6.1 Experiment Question and Procedure
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-sub">
          <span>
             <a href="#h.nutxoinc1xvn">
                6.2 Sample Results and Analysis
             </a>
          </span>
       </p>
-      <p>
+      <p class="toc-heading">
          <span>
             <a href="#h.eme3bv47nlkc">
                VII. Experimental Notes
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.yibbv3537qpi">
-               1. Start With a Clear Question
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.2hvzbmttwrgh">
-               2. Control Your Variables
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.ojln1ndpfhtf">
-               3. Use Consistent Equipment
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.wrxvxolq5iz6">
-               4. Record Everything
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.80ngkde8oppt">
-               5. Repeat the Trial
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.1e403r7iq80p">
-               6. Record in a Quiet Environment
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.qfcg28si2kg8">
-               7. Analyze with a Plan
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.thrktbk0ef5u">
-               8. Know That Error is Normal
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.ye5jdtkkq9bn">
-               9. Save Your Raw Data
-            </a>
-         </span>
-      </p>
-      <p>
-         <span>
-            <a href="#h.8yaodtshy9g9">
-               10. Reflect After You Finish
             </a>
          </span>
       </p>
@@ -344,7 +298,7 @@
       </p>
    </div>
 
-   <div class = "page">
+   <div class="page">
       <h1 id="h.j31fb2aldmdx">
          <span>
             Part 1) Sound Theory
@@ -399,7 +353,7 @@
       </p>
    </div>
 
-   <div class="page"></div>
+   <div class="page">
       <h2 id="h.8czrqzi7u0dj">
          <span>
             II. The Properties of Waves
@@ -472,6 +426,9 @@
             inverse square law, meaning sound intensity decreases as distance increases.
          </span>
       </p>
+   </div>
+
+   <div class="page">
       <h3 id="h.ts6u105ceqkg">
          <span>
             2.3 Superposition and Interference
@@ -528,6 +485,9 @@
          </span>
          <hr />
       </p>
+   </div>
+
+   <div class="page">
       <h2 id="h.1hxtn8ykf7a6">
          <span>
             III. The Wave Equation
@@ -586,6 +546,9 @@
          </span>
          <hr />
       </p>
+   </div>
+
+   <div class="page">
       <h2 id="h.hmyxbus9lxvl">
          <span>
             IV. Sound Effects and Uses
@@ -756,6 +719,9 @@
          </span>
          <img src="equations/image13.png" />
       </p>
+   </div>
+
+   <div class="page">
       <p>
          <span>
             Thus, the equation for the speed of sound in different media differs as in the examples below:
@@ -890,6 +856,9 @@
          <span>
          </span>
       </p>
+   </div>
+
+   <div class="page">
       <h1 id="h.b49sjncw9rsc">
          <span>
             Part 2)
@@ -1057,6 +1026,9 @@
             gear icon next to the layer.
          </span>
       </p>
+   </div>
+
+   <div class="page">
       <table>
          <tr>
             <td colspan="1" rowspan="1">
@@ -1249,6 +1221,9 @@
          <span>
          </span>
       </p>
+   </div>
+
+   <div class="page">
       <table>
          <tr>
             <td colspan="1" rowspan="1">
@@ -1323,6 +1298,9 @@
          <span>
          </span>
       </h2>
+   </div>
+
+   <div class="page">
       <h2 id="h.lx4i5zmygwkl">
          <span>
             VI. Sample Experiment
@@ -1526,6 +1504,9 @@
             </span>
          </li>
       </ul>
+   </div>
+
+   <div class="page">
       <h3 id="h.nutxoinc1xvn">
          <span>
             6.2 Sample Results and Analysis
@@ -1580,7 +1561,7 @@
          <span>
          </span>
          <span>
-            <img alt="" src="images/ebook_figure1.png" title="" />
+            <img alt="" src="images/ebook_figure1.png" width="500" height=auto>
          </span>
       </p>
       <p>
@@ -1599,6 +1580,9 @@
          <span>
          </span>
       </p>
+   </div>
+
+   <div class="page">
       <p>
          <span>
             In a separate analysis of the frequency domain (Figure 2), FFT data revealed that specific frequency
@@ -1608,13 +1592,15 @@
             modulates the bowl’s surface oscillations, which, according to wave theory, can shift energy into new
             harmonic ranges through nonlinear resonance.
          </span>
+      </p>
+      <p>
          <span>
-            <img alt="" src="images/ebook_figure2.png" title="" />
+            <img alt="" src="images/ebook_figure2.png" width="500" height=auto>
          </span>
       </p>
       <p>
          <span>
-            <img alt="" src="images/ebook_figure3.png" title="" />
+            <img alt="" src="images/ebook_figure3.png" width="500" height=auto>
          </span>
       </p>
       <p>
@@ -1646,6 +1632,9 @@
          <span>
          </span>
       </h2>
+   </div>
+
+   <div class="page">
       <h2 id="h.eme3bv47nlkc">
          <span>
             VII. Experimental Notes
@@ -1785,6 +1774,9 @@
             trials per setup. Average the data if needed, or look for consistent trends.
          </span>
       </p>
+   </div>
+
+   <div class="page">
       <h3 id="h.1e403r7iq80p">
          <span>
             6. Record in a Quiet Environment
@@ -1881,6 +1873,9 @@
          </span>
          <hr />
       </p>
+   </div>
+
+   <div class="page">
       <h1 id="h.pzig5rg9bs0u">
          <span>
             References
